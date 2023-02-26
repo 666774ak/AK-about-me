@@ -184,8 +184,7 @@
     width: 30%;
     max-width: auto;
     max-height: auto;
-    /* float:left; Выравнивание по левому краю */
-    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    margin: 7px 7px 7px 0;
 }
 
 h2 {
@@ -273,11 +272,11 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    background-color: #b9babb;
     width: 100%;
     max-width: 920px;
     min-height: 150px;
     border-radius: 0 50px;
+    background: linear-gradient(-45deg, #7e7978, #1f1d1d, #23a6d5, #b9babb);
 }
 
 .text-block {
@@ -317,4 +316,18 @@ h2 {
 
 .Surgut-link {
     color: #1674CB;
+}
+
+/* Media */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
